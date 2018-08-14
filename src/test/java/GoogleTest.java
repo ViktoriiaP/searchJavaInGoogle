@@ -10,7 +10,8 @@ public class GoogleTest {
         new GooglePage().searchFor("Java");
 
         SearchResultPage results = new SearchResultPage();
-        results.getResult(0).shouldHave(text("Computer programming language"));
+        results.getResult(0).shouldHave(text("Что такое автоматическое обновление Java?"));
+        // original results.getResult(0).shouldHave(text("Computer programming language"));
     }
 
     @Test

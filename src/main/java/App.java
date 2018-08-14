@@ -1,9 +1,10 @@
    import org.apache.log4j.Logger;
 
     public class App {
-        final static Logger logger = Logger.getLogger(App.class);
+        final static Logger logger = Logger.getRootLogger();
+        //getLogger(App.class);
 
-        public void logMessages() {
+        public static void logMessages() {
             logger.debug("debug"); // all
             logger.info("info"); // except debug
             logger.warn("warn"); // except debug and info
